@@ -1,0 +1,248 @@
+/* Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* SETUP */
+
+:root {
+
+    /* Color Styles */
+    --primary: #fbc257;
+    --primary-light: #fccc73;
+    --dark-brow: #341413;
+    --gray-1: #798092;
+    --gray-2: #e6e6ed;
+    --white: #ffffff;
+
+    /* Font Size Desktop */
+    --header-1: 64px;
+    --header-2: 48px;
+    --header-3: 42px;
+    --header-4: 32px;
+
+    --text-medium: 18px;
+    --text-regular: 16px;
+    --text-light: 13px;
+
+    /* Font Weight */
+    --font-weight-bold: 700;
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BUTTON */
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-size: var(--text-medium);
+    font-weight: vaR(--font-weight-medium);
+    border: none;
+}
+
+/* BUTTON PRIMARY */
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-primary:focus {
+    background-color: var(--primary-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+}
+
+
+/* BUTTON SECONDARY */
+
+.btn-secondary {
+    background-color: var(--gray-2);
+    color: var(--gray-1)
+}
+
+.btn-secondary:focus {
+    background-color: var(--white);
+    box-shadow: 0px 4px 19px rgba(0,0,0,0.05) !important;
+    color: var(--gray-1);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white) !important;
+    box-shadow: 0px 4px 19px rgba(0,0,0,0.05) !important;
+    color: var(--gray-1);
+}
+
+
+/* BUTTON SECONDARY */
+
+.navbar-brand img {
+    padding-right: 16px;
+}
+
+.navbar-brand span {
+    font-size: var(--text-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--dark-brow);
+}
+
+.navbar {
+    padding: 48px 0;
+}
+
+a.nav-link {
+    margin-right: 39px;
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-regular);
+    color: var(--dark-brow) !important;
+}
+
+
+/* HERO SECTION */
+
+section.hero {
+    margin: 5rem 0;
+}
+
+.text-label,
+.text-hero-bold,
+.text-hero-regular {
+    margin: 24px 0;
+}
+
+.text-label {
+    color: var(--primary);
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: 31px;
+}
+
+.text-hero-bold {
+    color: var(--dark-brow);
+    font-size: var(--header-1);
+    font-weight: var(--font-weight-bold);
+    line-height: 74px;
+    text-transform: capitalize;
+}
+
+.text-hero-regular {
+    color: var(--gray-1);
+    font-size: var(--text-regular);
+    font-weight: var(--font-weight-regular);
+    line-height: 31px;
+}
+
+
+/* TESTIMONI BRAND */
+
+.testimoni-brand {
+    padding: 24px 0;
+}
+
+
+/* DESKTOP VERSION ONLY */
+
+@media (min-width: 1399.98px) {
+    .container {
+        width: 84%;
+    }
+    .testimoni-brand {
+        padding: 4rem 5rem;
+    }
+}
+
+
+/* MOBILE VERSION ONLY */
+
+@media (max-width: 576px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 28px 0;
+    }
+    .a.nav-link {
+        margin-right: 7px 0;
+    }
+
+    /* Hero */
+    section.hero {
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+    .ms-3 {
+        margin-left: 0 !important;
+    }
+    .text-label,
+    .text-hero-bold,
+    .text-hero-regular {
+        text-align: center;
+    }
+    .text-hero-bold {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 64px;
+    }
+    section.hero img {
+        margin: 2rem 0;
+    }
+
+}
+
+/* TABLET SMALL VERSIONY ONLY */
+@media (max-width: 768px) { 
+    /* Navbar */
+    .navbar {
+        padding: 28px 0;
+    }
+    .a.nav-link {
+        margin-right: 7px 0;
+    }
+
+    /* Hero */
+    section.hero {
+        margin: 1rem 0;
+    }
+    .text-hero-bold {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 64px;
+    }
+    section.hero img {
+        margin: 2rem 0;
+    }
+}
+
+/* TABLET MEDIUM & LARGE VERSIONY ONLY */
+@media (max-width: 992px) { 
+    /* Navbar */
+    .navbar {
+        padding: 28px 0;
+    }
+    .a.nav-link {
+        margin-right: 7px 0;
+    }
+
+    /* Hero */
+    section.hero {
+        margin: 1rem 0;
+    }
+    .text-hero-bold {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 64px;
+    }
+    section.hero img {
+        margin: 2rem 0;
+    }
+}
